@@ -60,7 +60,7 @@ function MainComponent() {
               </li>
               <li>
                 <a
-                  href="#how-it-works"
+                  href="#manual"
                   className="hover:text-gray-300 transition-colors"
                 >
                   Manual
@@ -112,9 +112,12 @@ function MainComponent() {
         <section id="about" className="py-32 bg-gray-100 text-gray-800">
           <div className="container mx-auto px-4 md:px-0">
             <h2 className="text-4xl font-bold text-center mb-16">About Apoma</h2>
-            <div className="bg-white rounded-lg p-8 md:p-12 shadow-xl transform hover:scale-105 transition-all duration-300">
+            <div className="bg-white rounded-lg p-8 md:p-12 shadow-xl transform hover:scale-105 transition-all duration-300 text-center">
               <p className="text-xl leading-relaxed">
                 アポマとは、音声メッセージを瞬時にテキストに変換する革新的なLINE Botです。
+              </p>
+              <p className="text-xl leading-relaxed">
+                最新のAI技術を駆使し、長時間の音声も正確に文字起こしします。
               </p>
               <p className="text-xl leading-relaxed">
                 アポマがあれば、音声をテキストに変換する作業が驚くほど簡単になります。
@@ -170,10 +173,10 @@ function MainComponent() {
             </div>
           </div>
         </section>
-        <section id="how-it-works" className="py-32 bg-gray-100 text-gray-800">
+        <section id="manual" className="py-32 bg-gray-100 text-gray-800">
           <div className="container mx-auto px-4 md:px-0">
             <h2 className="text-4xl font-bold text-center mb-16">
-              How to start
+              How to Start
             </h2>
             <div className="max-w-3xl mx-auto">
               {[
