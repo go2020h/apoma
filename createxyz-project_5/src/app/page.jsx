@@ -128,7 +128,7 @@ function MainComponent() {
                 あなたのコミュニケーションを、よりスムーズに、より効率的に。
               </p>
               <p className="text-xl leading-relaxed">
-                音声文字起こしBotで、新しい可能性を開きましょう。
+                アポマで、新しい可能性を開きましょう。
               </p>
             </div>
           </div>
@@ -155,7 +155,7 @@ function MainComponent() {
                     <i className="fas fa-chart-bar text-gray-400 text-4xl"></i>
                   ),
                   title: "長文の自動要約",
-                  desc: "長時間の音声データも自動で要約し、重要なポイントを簡潔にまとめます。効率的な情報整理をサポートします。詳細な制限事項については、別途ご確認ください。",
+                  desc: "長時間の音声データも自動で要約し、重要なポイントを簡潔にまとめます。効率的な情報整理をサポートします。詳細な制限事項については、下記をご確認ください。",
                 },
               ].map((feature, index) => (
                 <div
@@ -188,7 +188,7 @@ function MainComponent() {
                 },
                 {
                   title: "Step 2 - 音声メッセージを送信する",
-                  desc: "LINEの音声メッセージ機能を使って、文字起こししたい音声を送信します。",
+                  desc: "LINEの音声メッセージ機能を使って、文字起こししたい音声を送信します。\n※音声メッセージ：25分（25MB）以内、文字起こし後の文字数：5000字以内まで可能",
                 },
                 {
                   title: "Step 3 - テキストを受信する",
@@ -196,7 +196,12 @@ function MainComponent() {
                 },
               ].map((step, index) => (
                 <AccordionItem key={index} title={step.title}>
-                  {step.desc}
+                    {step.desc.split('\n').map((line, i) => (
+                      <React.Fragment key={i}>
+                        {line}
+                        <br />
+                      </React.Fragment>
+                    ))}
                 </AccordionItem>
               ))}
             </div>
