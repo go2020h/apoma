@@ -88,6 +88,8 @@ function MainComponent() {
         </div>
         
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"></link>
+        <link rel="icon" href="/apoma.jpg"></link>
+
       </header>
       <main className="pt-20">
         <section
